@@ -22,16 +22,7 @@ export default function Portfolio() {
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {artworks.map((art) => (
-          <Card key={art.id} className="rounded-2xl shadow-lg overflow-hidden">
-            <img
-              src={art.image}
-              alt={art.title}
-              className="w-full h-60 object-cover"
-            />
-            <CardContent>
-              <h2 className="text-lg font-semibold">{art.title}</h2>
-            </CardContent>
-          </Card>
+         
         ))}
       </div>
 
