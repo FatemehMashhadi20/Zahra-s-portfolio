@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import Image from "next/image";
 
 const artworks = [
   { id: 1, title: "Anime", image: "/IMG_5039.jpg" },
@@ -23,18 +23,18 @@ const artworks = [
   { id: 17, title: "Ocean Dreams", image: "/FullSizeRender.jpeg" },
 ];
 
-export default function Portfolio() {
+export default function Page() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState(""); // To track submission status
 
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: { preventDefault: () => void; target: any; }) => {
+  const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const form = e.target;
+    const form = e.target as HTMLFormElement;;
     const formData = new FormData(form);
 
     try {
@@ -50,7 +50,8 @@ export default function Portfolio() {
         setStatus("Oops! Something went wrong. Please try again.");
       }
     } catch (error) {
-      setStatus("Message sent! We'll get back to you soon.");
+      console.error("Form submission error:", error); // Log error
+      setStatus("Oops! Something went wrong. Please try again.");
     }
   };
 
@@ -58,24 +59,22 @@ export default function Portfolio() {
     
     
     <div className="container mx-auto p-6">
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-4xl font-bold text-center mb-8 text-gray-800"
-      >
-        Zahra's Portfolio Page
-      </motion.h1>
+      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+  Zahra&apos;s Portfolio Page
+</h1>
+
+      
+
 
 
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {artworks.map((art) => (
           <div key={art.id} className="rounded-2xl shadow-lg overflow-hidden bg-white">
-            <img
-              src={art.image}
-              alt={art.title}
-              className="w-full h-60 object-cover"
-            />
+            
+
+            <Image src={art.image} alt={art.title} width={600} height={300} className="w-full h-60 object-cover" />
+
             <div className="p-4">
               <h2 className="text-lg font-semibold text-gray-700">{art.title}</h2>
             </div>
@@ -135,7 +134,8 @@ export default function Portfolio() {
       </div>
 
       <footer className="mt-16 p-4 text-center text-gray-600">
-  <p>&copy; {new Date().getFullYear()} Zahra's Portfolio. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Zahra&apos;s Portfolio. All rights reserved.</p>
+
 </footer>
     </div>
   );
