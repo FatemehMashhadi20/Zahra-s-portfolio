@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const artworks = [
   { id: 1, title: "Anime", image: "/IMG_5039.jpg" },
-  { id: 2, title: "Abstract Flow", image: "/IMG_5040.jpeg" },
-  { id: 3, title: "Ocean Dreams", image: "/IMG_5041.jpeg" },
+  { id: 2, title: "Gojo", image: "/IMG_5040.jpeg" },
+  { id: 3, title: "Shoto", image: "/IMG_5041.jpeg" },
   { id: 4, title: "Ocean Dreams", image: "/IMG_5042.jpeg" },
   { id: 5, title: "Ocean Dreams", image: "/IMG_5045.jpeg" },
   { id: 6, title: "Ocean Dreams", image: "/IMG_5047.jpeg" },
