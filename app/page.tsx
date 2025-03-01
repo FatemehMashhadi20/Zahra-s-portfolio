@@ -15,7 +15,7 @@ const artworks = [
   { id: 9, title: "Dynamite", image: "/IMG_5087.jpeg" },
   { id: 10, title: "Ocean Dreams", image: "/IMG_5088.jpeg" },
   { id: 11, title: "Hanako", image: "/IMG_5090.jpeg" },
-  { id: 12, title: "Eru Chitana", image: "/IMG_5092.jpeg" },
+  { id: 12, title: "Eru Chitanda", image: "/IMG_5092.jpeg" },
   { id: 13, title: "Ocean Dreams", image: "/IMG_5093.jpeg" },
   { id: 14, title: "Ocean Dreams", image: "/IMG_5102.jpeg" },
   { id: 15, title: "Ocean Dreams", image: "/IMG_5107.jpeg" },
