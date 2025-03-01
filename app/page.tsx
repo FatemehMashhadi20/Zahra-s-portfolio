@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const artworks = [
-  { id: 1, title: "Anime", image: "/5039.PNG" },
+  { id: 1, title: "Anime", image: "/5039.png" },
   { id: 2, title: "Gojo", image: "/IMG_5040.jpeg" },
   { id: 3, title: "Shoto", image: "/IMG_5041.jpeg" },
   { id: 4, title: "Ocean Dreams", image: "/IMG_5042.jpeg" },
