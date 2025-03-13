@@ -16,11 +16,11 @@ const artworks = [
   { id: 10, title: "Chifuyu", image: "/IMG_5088.jpeg" },
   { id: 11, title: "Hanako", image: "/IMG_5090.jpeg" },
   { id: 12, title: "Eru Chitanda", image: "/IMG_5092.jpeg" },
-  { id: 13, title: "Ocean Dreams", image: "/IMG_5093.jpeg" },
-  { id: 14, title: "Ocean Dreams", image: "/IMG_5102.jpeg" },
-  { id: 15, title: "Ocean Dreams", image: "/IMG_5107.jpeg" },
-  { id: 16, title: "Ocean Dreams", image: "/IMG_5112.jpeg" },
-  { id: 17, title: "Ocean Dreams", image: "/FullSizeRender.jpeg" },
+  { id: 13, title: "Sky", image: "/IMG_5093.jpeg" },
+  { id: 14, title: "Chibi Dazai", image: "/IMG_5102.jpeg" },
+  { id: 15, title: "Emilia", image: "/IMG_5107.jpeg" },
+  { id: 16, title: "Cat Noir", image: "/IMG_5112.jpeg" },
+  { id: 17, title: "Marin", image: "/FullSizeRender.jpeg" },
 ];
 
 export default function Page() {
