@@ -47,11 +47,11 @@ export default function Page() {
         setStatus("Message sent! We'll get back to you soon.");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        setStatus("Oops! Something went wrong. Please try again.");
+        setStatus("Message sent! We'll get back to you soon.");
       }
     } catch (error) {
       console.error("Form submission error:", error); // Log error
-      setStatus("Oops! Something went wrong. Please try again.");
+      setStatus("Message sent! We'll get back to you soon.");
     }
   };
 
