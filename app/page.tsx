@@ -4,16 +4,16 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const artworks = [
-  { id: 1, title: "Anime", image: "/5039.png" },
+  { id: 1, title: "Hatsune Miku", image: "/5039.png" },
   { id: 2, title: "Gojo", image: "/IMG_5040.jpeg" },
   { id: 3, title: "Shoto", image: "/IMG_5041.jpeg" },
-  { id: 4, title: "Ocean Dreams", image: "/IMG_5042.jpeg" },
+  { id: 4, title: "Megumi", image: "/IMG_5042.jpeg" },
   { id: 5, title: "Dazai", image: "/IMG_5045.jpeg" },
   { id: 6, title: "Naruto", image: "/IMG_5047.jpeg" },
-  { id: 7, title: "Ocean Dreams", image: "/IMG_5052.jpeg" },
+  { id: 7, title: "Ochako", image: "/IMG_5052.jpeg" },
   { id: 8, title: "Yuji Itadory", image: "/IMG_5058.jpeg" },
   { id: 9, title: "Dynamite", image: "/IMG_5087.jpeg" },
-  { id: 10, title: "Ocean Dreams", image: "/IMG_5088.jpeg" },
+  { id: 10, title: "Chifuyu", image: "/IMG_5088.jpeg" },
   { id: 11, title: "Hanako", image: "/IMG_5090.jpeg" },
   { id: 12, title: "Eru Chitanda", image: "/IMG_5092.jpeg" },
   { id: 13, title: "Ocean Dreams", image: "/IMG_5093.jpeg" },
