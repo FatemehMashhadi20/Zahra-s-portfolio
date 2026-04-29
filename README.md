@@ -64,14 +64,12 @@ To run this project locally, follow these steps:
 - `pages/`: Next.js pages, including the homepage and individual portfolio pieces.
 - `styles/`: Tailwind CSS configuration and global styles.
 
-## 📬 Author
+## Author
 
 Made with ❤️ by Fatemeh Mashhadi  
 LinkedIn: https://www.linkedin.com/in/fatemehmashhadi/
 Portfolio: https://fatemeh-s-portfolio.vercel.app/
 
----
-
-## 📝 License
+## License
 
 This project is not open source and is intended for personal or educational use only. Redistribution or commercial use is not permitted without explicit permission from the author.
